@@ -1,4 +1,4 @@
-node {
+pipeline {
         stage('Build') {git 'https://github.com/Bruno621/Projetos.git'}
         
         stage('Testes Automatizados') {sh "chmod +x -R ${env.WORKSPACE}"}
